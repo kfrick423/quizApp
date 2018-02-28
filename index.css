@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+
+  color:white;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: rgba(87, 0, 255, 0.75)
+}
+
+.logo{
+  width: 100px;
+  height:100px;
+  border-radius: 75px;
+  margin-top: 25px;
+}
+
+header{
+  width: 100%;
+  display: inline-block;
+  color: #ECF0F1;
+}
+
+header::before,
+header::after {
+  display: table;
+  content: '';
+}
+
+header::after {
+  clear: both;
+}
+.col-4,
+.col-8 {
+    float: left;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+}
+.col-4 {
+    width: 33.33%
+}
+.col-8 {
+    width: 66.67%
+}
+.logo {
+    height: 150px;
+    width: 150px;
+    vertical-align: center;
+}
+
+ header ul li{
+  list-style: none;
+  display: inline;
+  line-height: 200px;
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
+  float: right;
+}
+
+header ul {
+  padding
+}
+
+main {
+  padding: 25px;
+  text-align: center;
+  border:5px solid white;
+  border-radius: 25px;
+  text-shadow: 3px 2px #000000;
+  margin-left:2%;
+  margin-right:2%;
+  margin-bottom: 2%;
+}
+
+.startButton{
+  color: #ffffff;
+  background: rgba(0, 0, 255, 0.6);
+  font-size: 25px;
+  margin: 20px;
+  padding: 15px;
+  border:white solid 3px;
+  text-shadow: 1px 1px #424949;
+  border-radius: 25px;         
+} 
+
+button:hover, button:focus{
+    background: rgba(255, 0, 0, 0.6);
+    color: #ffffff;
+}
+
+.questionAnswerForm {
+  display: none;
+}
+
+question-${questionNumber} h2{
+  margin-bottom: 15px;
+}
+
+label:nth-child(1), label:nth-child(3) {
+  background: rgba(0, 0, 255, 0.6);
+}
+label:nth-child(2), label:nth-child(4){
+  background: rgba(255, 0, 0, 0.6);
+}
+
+label {
+  display: flex;
+  padding: 20px;
+  border: 5px solid #ffffff;  
+  vertical-align: center;
+  margin-bottom: 5px;
+  border-radius: 25px;
+}
+
+label:hover, label:focus{
+  background: #C0C0C0;	
+}
+
+fieldset {
+  border: none;
+}
+
+input{
+  height:40px;
+  
+}
+
+form span{
+  font-size: 25px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+
+.submitButton, .nextButton, .restartButton{
+  color: #ffffff;
+  background: rgba(0, 0, 255, 0.6);
+  font-size: 25px;
+  margin: 20px;
+  padding: 15px;
+  border:white solid 3px;
+  text-shadow: 1px 1px #424949;
+  border-radius: 25px;         
+}
+
+.correctFeedback img {
+    width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 25%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px
+} 
+
+//Responsive Design
+
+@media screen and (max-width: 1190px) {
+    .questionAnswerForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    header ul li {
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 100px;
+        float: none;
+    }
+    header ul{
+      text-align:center;
+    }
+    .col-4,
+    .col-8 {
+        width: 100%
+    }
+    .quizStart {
+        width: 100%;
+        padding: 40px;
+        margin-top: 0
+    }
+    h2 {
+        font-size: 25px
+    }
+    .questionAnswerForm {
+        width: 100%;
+        padding: 15px;
+        margin-top: 0
+    }
+    .correctFeedback img {
+        width: 100px;
+        height: auto
+    }
+    .correctFeedback p {
+        font-size: 20px;
+        margin: 0 15px
+    }
+    .results p:first-of-type {
+        font-size: 20px
+    }
+    h3 {
+        font-size: 25px
+    }
+}
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Grateful Dead Quiz</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="transparent">
+    <header role="banner">
+      <div class="col-4">
+        <a href="index.html">
+          <img src="https://cdn.shopify.com/s/files/1/1219/4344/collections/gratefuldead_1400x.jpg?v=1487009732" class="logo" alt="GD Stealie">
+        </a>
+      </div>
+      <div class="col-8">
+        <ul>
+          <li>Question: <span class="questionNumber">0</span>/10</li>
+          <li>Score: <span class="score">0</span></li>
+        </ul>
+      </div>
+    </header>
+    <main role="main">
+      <div class="quizButton">
+        <h1>HOW WELL DO YOU KNOW THE GRATEFUL DEAD?</h1>
+        <button type="button" class="startButton">LET'S BEGIN!</button>
+      </div>
+      <div class="questionAnswerForm" aria-live="assertive"></div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+    </div>
+  </body>
+</html
